@@ -1,0 +1,142 @@
+.casa {
+  box-sizing: content-box;
+  display: grid;
+  width: 600px;
+  height: 600px;
+  border: 10px double grey;
+  grid-template-columns: 300px 100px 200px;
+  grid-template-rows: 350px 100px 150px;
+}
+  
+/* --------------------------------------------------------------- */
+
+.quarto-secundario {
+  grid-column: 1;
+  grid-row: 1;
+  border-bottom: 10px double grey;
+  border-right: 10px double grey;
+
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.quarto-secundario > .guarda-roupa {
+  width: 200px;
+  height: 60px;
+  background-color: grey;
+}
+
+.quarto-secundario > .cama {
+  height: 180px;
+  width: 90px;
+  background-color: grey;
+}
+
+
+/* --------------------------------------------------------------- */
+
+.sala {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* -------------------------------------------------------------------- */
+
+
+.quarto-principal {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.quarto-principal > .cama {
+  width: 200px;
+  height: 130px;
+  margin-bottom: 20px;
+  background-color: grey;
+}
+.quarto-principal > .guarda-roupa {
+  height: 50px;
+  width: 150px;
+  background-color: grey;
+}
+
+/* -------------------------------------------------------------------- */
+
+
+
+.banheiro {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  border-top: 10px double grey;
+  border-left: 10px double grey;
+  border-right: 10px double grey;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+
+.banheiro > .pia {
+  width: 30px;
+  height: 40px;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.banheiro > .vaso-sanitario {
+  width: 45px;
+  height: 30px;
+  background-color: grey;
+}
+
+.banheiro > .chuveiro {
+  width: 35px;
+  height: 15px;
+  background-color: grey;
+}
+
+
+.cozinha {
+  grid-column: 3 / 4;
+  grid-row: 2 / 4;
+  border-top: 10px double grey;
+
+  /* padding-left: 100px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cozinha > .section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cozinha > .section > .pia {
+  height: 100px;
+  width: 50px;
+  background-color: silver;
+}
+
+.cozinha > .section > .movel {
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+}
+
+/* -------------------------------------------------------------------- */
